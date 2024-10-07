@@ -33,6 +33,7 @@ created_frames = []
 def reset_window():
     for widget in created_frames:
         widget.destroy()
+    comparison_words.clear()
 
 reset_button = tk.Button(window, text="Reset", command=reset_window)
 reset_button.place(x=700,y=88)
